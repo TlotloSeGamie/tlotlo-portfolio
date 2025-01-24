@@ -1,0 +1,63 @@
+.skills {
+    padding: 2.5rem 1.25rem; 
+    background-color: #121212; 
+}
+
+.skills h2 {
+    text-align: center;
+    font-size: 2.5rem; 
+    margin-bottom: 2rem; 
+    color: #28a745; 
+    text-transform: uppercase; 
+    letter-spacing: 0.09375rem;
+}
+
+.skills-table {
+    width: 100%;
+    max-width: 50rem;
+    margin: 0 auto;
+    border-collapse: collapse;
+    font-size: 1.1rem; 
+    color: #e0e0e0; 
+    background-color: #1a1a1a;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
+    border-radius: 0.5rem; 
+    overflow: hidden;
+}
+
+.skills-table th,
+.skills-table td {
+    border: 0;
+    padding: 1rem; 
+    text-align: left;
+}
+
+.skills-table th {
+    background-color: #28a745; 
+    color: #ffffff;
+    font-weight: bold;
+    text-transform: uppercase; 
+    letter-spacing: 0.0625rem; 
+}
+
+.skills-table tr:nth-child(even) {
+    background-color: #2c2c2c; 
+}
+
+.skills-table tr:nth-child(odd) {
+    background-color: #1a1a1a;
+}
+
+.skills-table tr:hover {
+    background-color: #3a3a3a; 
+    cursor: pointer; 
+}
+
+.skills-table td {
+    border-bottom: 1px solid #333333;
+}
+
+.skills-table td:last-child {
+    color: #bfbfbf; 
+    font-style: italic; 
+}

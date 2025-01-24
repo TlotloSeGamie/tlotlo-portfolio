@@ -1,0 +1,233 @@
+.projects {
+    padding: 2.5rem 1.25rem; 
+    background-color: #121212; 
+}
+
+.projects h2 {
+    text-align: center;
+    font-size: 2.5rem; 
+    margin-bottom: 2rem; 
+    color: #28a745;
+    text-transform: uppercase;
+    letter-spacing: 0.09375rem; 
+}
+
+.project-list {
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: center; 
+    margin: 0 auto;
+    max-width: 75rem;
+    gap: 1.5rem; 
+}
+
+.category-section {
+    display: none;
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.category-section.show {
+    display: block; 
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+.project-card {
+    background-color: #1a1a1a; 
+    border: 1px solid #333333; 
+    border-radius: 0.5rem; 
+    padding: 1.25rem; 
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.project-card:hover {
+    transform: translateY(-0.5rem); 
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3);
+}
+
+.project-card h3 {
+    color: #28a745; 
+    font-size: 1.5rem;
+    margin-bottom: 0.625rem;
+}
+
+.project-card p {
+    margin: 0.625rem 0; 
+    color: #e0e0e0; 
+    font-size: 1rem;
+    line-height: 1.6; 
+}
+
+.project-card ul {
+    margin: 0.625rem 0;
+    padding-left: 1.25rem; 
+    color: #c0c0c0; 
+    font-size: 1rem;
+    list-style: disc; 
+}
+
+.project-card {
+    background: linear-gradient(145deg, #222222, #1a1a1a); 
+    border: 1px solid #333333; 
+    border-radius: 0.75rem; 
+    padding: 1.5rem; 
+    box-shadow: 0 0.75rem 1.5rem rgba(0, 0, 0, 0.25); 
+    transition: transform 0.4s ease, box-shadow 0.4s ease, background 0.4s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.project-card:hover {
+    transform: translateY(-0.8rem); 
+    box-shadow: 0 1.5rem 2.5rem rgba(0, 0, 0, 0.35); 
+    background: linear-gradient(145deg, #2a2a2a, #202020);
+}
+
+.project-card h3 {
+    color: #28a745; 
+    font-size: 1.75rem; 
+    margin-bottom: 1rem; 
+    position: relative;
+}
+
+.project-card h3 svg {
+    margin-right: 0.5rem; 
+    font-size: 1.5rem; 
+    vertical-align: middle; 
+}
+
+.project-card p {
+    margin: 0.75rem 0; 
+    color: #d3d3d3; 
+    font-size: 1.1rem; 
+    line-height: 1.8;
+    letter-spacing: 0.03rem;
+}
+
+.project-card ul {
+    margin: 1rem 0;
+    padding-left: 1.5rem; 
+    color: #cfcfcf; 
+    font-size: 1.05rem;
+    list-style: none; 
+}
+
+.project-card ul li {
+    position: relative;
+    padding-left: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.project-card ul li:before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: #28a745;
+    font-size: 1.25rem;
+    line-height: 1;
+    top: 0.2rem;
+}
+
+.project-card a {
+    display: inline-block;
+    margin-top: 1.25rem; 
+    padding: 0.75rem 1.25rem; 
+    color: #28a745; 
+    border: 2px solid #28a745;
+    border-radius: 0.5rem;
+    text-decoration: none; 
+    font-weight: bold; 
+    font-size: 1.05rem; 
+    transition: color 0.4s ease, background-color 0.4s ease, transform 0.4s ease;
+}
+
+.project-card a:hover {
+    color: #ffffff;
+    background-color: #28a745;
+    transform: translateY(-0.2rem);
+}
+
+.category-section.show .project-card {
+    animation: fadeInUp 0.6s ease both;
+}
+
+.category-list {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 2rem;
+  }
+  
+.category-card {
+    display: inline-block;
+    text-align: center;
+    padding: 1.5rem;
+    border: 2px solid #28a745;
+    border-radius: 0.75rem;
+    background-color: #121212;
+    color: #28a745;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .category-card:hover {
+    transform: scale(1.1);
+    background-color: #28a745;
+    color: #fff;
+    box-shadow: 0 0.5rem 1rem rgba(40, 167, 69, 0.5);
+  }
+  
+  .category-card h3 svg {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+  
+  .category-card:hover h3 svg {
+    transform: rotate(360deg) scale(1.2);
+    color: #fff;
+  }
+  
+  .category-section {
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+  
+  .category-section.show {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .loader {
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    border: 0.2rem solid #28a745;
+    border-top: 0.2rem solid transparent;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+  }
+  
+  @keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

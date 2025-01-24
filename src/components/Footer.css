@@ -1,0 +1,37 @@
+.footer {
+    background-color: #121212; 
+    color: #e0e0e0; 
+    text-align: center;
+    padding: 2rem 1rem; 
+    margin-top: 2.5rem; 
+}
+
+.footer p {
+    margin: 0.8rem 0;
+    font-size: 1rem; 
+    color: #b0b0b0; 
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem; 
+    margin: 1rem 0;
+}
+
+.footer-links a {
+    color: #28a745; 
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem; 
+}
+
+.footer-links a:hover {
+    color: #fff; 
+    text-decoration: underline; 
+}
+
+.footer p:last-child {
+    font-size: 1rem;
+    color: #b0b0b0; 
+}
