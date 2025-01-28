@@ -1,8 +1,3 @@
-.about {
-    padding: 3.75rem 1.25rem; 
-    background-color: #121212; 
-}
-
 .about-content {
     max-width: 56.25rem; 
     margin: 0 auto;
@@ -14,9 +9,14 @@
     margin-bottom: 1.875rem; 
     color: #28a745; 
     letter-spacing: 0.09375rem; 
+    /* top: 8rem;
+    position: relative;
+    height: 60vh; */
+    width: 100%;
 }
 
 .about-details {
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -24,7 +24,7 @@
 }
 
 .about-image {
-    width: 16.25rem; 
+    width: 26.25rem; 
     height: 16.25rem; 
     border-radius: 50%;
     border: 0.2rem solid #28a745; 
@@ -151,3 +151,103 @@
     background-color: rgba(40, 167, 69, 0.2); 
     transform: rotate(10deg); 
 }
+
+
+  
+  @media (min-width: 768px) {
+    .about-details {
+      flex-direction: row;
+      justify-content: space-between;
+      gap: 2rem;
+    }
+  
+    .about-text {
+      font-size: 1.1rem;
+    }
+  
+    .about-image {
+      width: 20rem;
+      height: 20rem;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .about-content {
+      max-width: 56.25rem;
+    }
+  
+    .about-details {
+      gap: 3rem;
+    }
+  
+    .about-text {
+      font-size: 1.2rem;
+    }
+  
+    .contact-button, 
+    .hire-button {
+      font-size: 1rem;
+      padding: 0.8rem 2rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .about {
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+    }
+  
+    .about-text {
+      text-align: center;
+    }
+  
+    .about-image {
+      width: 16rem;
+      height: 16rem;
+    }
+  
+    .about-actions {
+      align-items: center;
+    }
+  
+    .contact-hire-btn {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .contact-button, 
+    .hire-button {
+      width: 100%;
+      text-align: center;
+      padding: 1rem 0;
+    }
+  
+    .social-links {
+      justify-content: center;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .about {
+      font-size: 1.8rem;
+      margin-bottom: 1.2rem;
+    }
+  
+    .about-text strong {
+      font-size: 1.2rem;
+    }
+  
+    .about-image {
+      width: 12rem;
+      height: 12rem;
+    }
+  
+    .icon-link {
+      font-size: 1.5rem;
+    }
+  
+    .contact-hire-btn {
+      gap: 0.8rem;
+    }
+  }
+  

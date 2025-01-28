@@ -10,7 +10,7 @@ const Contact = () => {
         with me on social media.
       </p>
       <div className="contact-links">
-        <a href="mailto:example@example.com" target="_blank" rel="noopener noreferrer">
+        <a href="mailto:t88segamie@gmail.com.com" target="_blank" rel="noopener noreferrer">
           Email Me
         </a>
         <a href="https://github.com/TlotloSeGamie" target="_blank" rel="noopener noreferrer">
