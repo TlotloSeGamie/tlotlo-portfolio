@@ -15,10 +15,11 @@
 .project-list {
     display: flex; 
     flex-wrap: wrap; 
-    justify-content: center; 
+    justify-content: center;  
     margin: 0 auto;
-    max-width: 75rem;
+    max-width: 175rem;
     gap: 1.5rem; 
+    height: 30vh;
 }
 
 .category-section {
@@ -41,30 +42,30 @@
   gap: 2rem;
   justify-items: stretch;
   margin: 0 auto;
-  max-width: 120rem; /* Increased max width for better spacing */
+  max-width: 120rem; 
   padding: 2rem;
-  background-color: #1b1b1b; /* Add subtle background for contrast */
+  background-color: #1b1b1b;
   border-radius: 1rem;
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3);
 }
 
 .project-card {
-  max-width: 40%;
+  max-width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   text-align: left;
-  background: linear-gradient(145deg, #292929, #1f1f1f); /* Slightly lighter gradient for modern look */
+  background: linear-gradient(145deg, #292929, #1f1f1f);
   border-radius: 1.5rem;
   box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.4);
   overflow: hidden;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  padding: 1.5rem;
-  gap: 2rem;
+  padding: 2rem;
+  gap: 1.5rem;
 }
 
 .project-card:hover {
-  transform: translateY(-1rem);
+  transform: translateY(-0.7rem);
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.6);
 }
 
@@ -112,6 +113,7 @@
   transform: translateY(-0.2rem);
 }
 
+
 @media (max-width: 768px) {
   .project-card h3 {
       font-size: 1.5rem;
@@ -137,7 +139,8 @@
     border-radius: 0.75rem;
     background-color: #121212;
     color: #28a745;
-    cursor: pointer;
+    cursor: pointer;    width: 20%;
+    height: 40vh;
     transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
   }
   

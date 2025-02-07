@@ -1,7 +1,6 @@
 import {  React, useState } from 'react';
 import './Projects.css';
-import { FaCode, FaMobileAlt, FaDesktop, FaServer } from 'react-icons/fa'; // Importing icon library
-
+import { FaCode, FaMobileAlt, FaDesktop, FaServer } from 'react-icons/fa'; 
 
 const projectsData = [
   {
@@ -14,7 +13,7 @@ const projectsData = [
     category: 'JavaScript'
   },
   {
-    title: 'Base Apparel Coming Soon Page',
+    title: 'Base Apparel Coming Soon Page', 
     description: 'A coming soon page for a fashion brand.',
     techStack: ['HTML', 'CSS'],
     features: ['Modern design', 'Email subscription form'],

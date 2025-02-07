@@ -1,6 +1,6 @@
 import React from "react";
 import "./About.css";
-import tlotlo from "../Assets/tlotlo.jpg";
+import Front from "../Assets/fronten1.jpeg";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 const About = () => {
@@ -8,7 +8,7 @@ const About = () => {
     <section id="about" className="about">
       <div className="about-content">
         <div className="about-details">
-          <img src={tlotlo} alt="Tlotlo Se Gamie" className="about-image" />
+          <img src={Front} alt="Tlotlo Se Gamie" className="about-image" />
           <div className="about-text">
             <h1>
               Hi, I'm <strong>Tlotlo</strong>
